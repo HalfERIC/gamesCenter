@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Center</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/img/icon.png">
+</head>
+
+<body>
+    <header id="topo">
+        <button id="btn-menu"><a href="#menu"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></a></button>
+        <nav id="menu" onclick="fecharModal()">
+            <a id="btn-fechar" href="#"><i class="fa fa-times-circle fa-lg" aria-hidden="true"></i></a>
+            <ul>
+                <a href="#">
+                    <li><a href="#">Jogos</a></li>
+                </a>
+                <a href="#">
+                    <li><a href="#">Gênero</a></li>
+                </a>
+                <a href="#">
+                    <li><a href="#">Lançamentos</a></li>
+                </a>
+                <a href="#">
+                    <li><a href="#">Promoções</a></li>
+                </a>
+                <a href="#">
+                    <li><a href="#">Novidades</a></li>
+                </a>
+            </ul>
+        </nav>
+        <button id="login" onclick="abrirModal()">
+            <a href="#"><i class="fa fa-user" aria-hidden="true"></i></a>   
+        </button>
+        <button id="pesquisa" onclick="fecharModal()">
+            <i><i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+    </header>
+    <div id="contato">
+        <form action="" method="get">
+            <h3>Log In</h3>
+            <p>
+                <label>
+                    E-mail:
+                    <input type="email" id="fid-email" name="fn-email">
+                </label>
+            </p>
+            
+            </p>
+                 <label>
+                      Senha:
+                      <input type="password" id="fid-senha" name="fn-senha">
+                </label>
+            <p>
+            <p>
+                <input onclick="validarFormulario()" class="botoes btn btn-light" type="button" value="Entrar">
+                <input onclick="limpar()" class="botoes btn btn-light" type="reset" value="Limpar">
+                <button onclick="fecharModal()" class="botoes btn btn-light">Fechar</button>
+            </p>
+            <h4 id="mensagem-erro"></h4>
+
+            
+        </form>
+    </div>
+    <section id="banner" onclick="fecharModal()">
+        <div id="texto-banner">
+            <h1>Games Center</h1>  
+            <div id="carrousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <a href="#fifa">      
+                        <img src="img/fifa21.jpg" class="d-block w-100" alt="">
+                      </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="#bf42">
+                        <img src="img/battlefield-2042.jpg" class="d-block w-100" alt="">
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="#gta-v">
+                        <img src="img/GTAV.jpg" class="d-block w-100" alt="">
+                    </a>  
+                  </div>
+                  <div class="carousel-item">
+                    <a href="#elden-ring">
+                        <img src="img/eldenring.jpg" class="d-block w-100" alt="">
+                    </a>  
+                  </div>
+                  <div class="carousel-item">
+                    <a href="#horizon-west">
+                        <img src="img/horizonforbbidenwest.jpg" class="d-block w-100" alt="">
+                    </a>  
+                  </div>
+                </div>
+            </div>
+            <h2>Novidades & Promoções</h2> 
+        </div>
+    </section>
+    <main id="corpo" onclick="fecharModal()">
+            <figure>
+                <img src="img/ghost-of-tsushima.jpg" alt="Ghost of Tsushima" title="Imagem do jogo Ghost of Tsushima">
+                <span>
+                    <h3>Ghost of Tsushima</h3>
+                    <h4>R$ 209,58</h4>
+                    <p>
+                        <a href="#">Clique aqui para mais informações</a>
+                    </p>
+                </span>
+            </figure>
+            <figure>
+                <img id="gta-v" src="img/GTAV.jpg" alt="Grand Theft Auto V" title="Imagem do jogo Grand Theft Auto V">
+                <span>
+                    <h3>Grand Theft Auto V</h3>
+                    <h4>R$ 32,90</h4>
+                    <p>
+                        <a href="#">Clique aqui para mais informações</a>
+                    </p>
+                </span>
+            </figure>
+            <figure>
+                <img src="img/god of war.jpg" alt="God Of War" title="Imagem do jogo God Of War">
+                <span>
+                    <h3>God Of War</h3>
+                    <h4>R$ 99,50</h4>
+                    <p>
+                        <a href="#">Clique aqui para mais informações</a>
+                    </p>
+                </span>
+            </figure>
+            <figure>
+                <img src="img/back4blood.jpg" alt="Back 4 Blood" title="Imagem do Back 4 Blood">
+                <span>
+                    <h3>Back 4 Blood</h3>
+                    <h4>R$ 160,00</h4>
+                    <p>
+                        <a href="#">Clique aqui para mais informações</a>
+                    </p>
+                </span>
+            </figure>
+            <figure>
+                <img id="elden-ring" src="img/eldenring.jpg" alt="Elden Ring" title="Imagem do jogo Elden Ring">
+                <span>
+                    <h3>Elden Ring</h3>
+                    <h4>R$ 250,00</h4>
+                    <p>
+                        <a href="#">Clique aqui para mais informações</a>
+                    </p>
+                </span>
+            </figure>
+            <figure>
+                <img id="fifa" src="img/fifa21.jpg" alt="FIFA 21" title="Imagem do jogo FIFA 21">
+                <span>
+                    <h3>FIFA 21</h3>
+                    <h4>R$ 79,90</h4>
+                    <p>
+                        <a href="#">Clique aqui para mais informações</a>
+                    </p>
+                </span>
+            </figure>
+            <figure>
+                <img id="bf42" src="img/battlefield-2042.jpg" alt="Battlefield 2042" title="Imagem do jogo Battlefield 2042">
+                <span>
+                    <h3>Battlefield 2042</h3>
+                    <h4>R$ 99,90</h4>
+                    <p>
+                        <a href="#">Clique aqui para mais informações</a>
+                    </p>
+                </span>
+            </figure>
+            <figure>
+                <img src="img/Mortal kombat 11.jpg" alt="Mortal Kombat 11" title="Imagem do jogo Mortal Kombat 11">
+                <span>
+                    <h3>Mortal Kombat 11</h3>
+                    <h4>R$ 119,50</h4>
+                    <p>
+                        <a href="#">Clique aqui para mais informações</a>
+                    </p>
+                </span>
+            </figure>
+            <figure>
+                <img src="img/daysgone.jpg" alt="Days Gone" title="Imagem do jogo Days Gone">
+                <span>
+                    <h3>Days Gone</h3>
+                    <h4>R$ 199,99</h4>
+                    <p>
+                        <a href="#">Clique aqui para mais informações</a>
+                    </p>
+                </span>
+            </figure>
+            <figure>
+                <img src="img/assassinscreed.jpg" alt="Assassin's Creed Origins" title="Imagem do jogo Assassin's Creed Origins">
+                <span>
+                    <h3>Assassin's Creed Origins</h3> 
+                    <h4>R$ 110,42</h4>
+                    <p>
+                        <a href="#">Clique aqui para mais informações</a>
+                    </p>
+                </span>
+            </figure>
+            <figure>
+                <img id="horizon-west" src="img/horizonforbbidenwest.jpg" alt="Horizon Forbbiden West" title="Imagem do jogo Horizon Forbbiden West">
+                <span>
+                    <h3>Horizon Forbbiden West</h3>
+                    <h4>R$ 219,90</h4>
+                    <p>
+                        <a href="#">Clique aqui para mais informações</a>
+                    </p>
+                </span>
+            </figure>
+            <figure>
+                <img src="img/crashbandicoot.jpg" alt="Crash Bandicoot" title="Imagem do jogo Crash Bandicoot">
+                <span>
+                    <h3>Crash Bandicoot 4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+                    <h4>R$ 89,90</h4>
+                    <p>
+                        <a href="#">Clique aqui para mais informações</a>
+                    </p>
+                </span>
+            </figure>          
+    </main>
+    <section id="siga-nos">
+        <div id="texto-siga-nos">
+            <h2>Siga-nos</h2>
+            <h3>Receba novidades, se atualize no mundo dos games e muito mais.</h3>
+        </div>
+    <footer id="rodape">
+        <nav id="redes-sociais">
+            <ul>
+                <a href="#"><li> <i class="fa fa-facebook fa-lg"> </i></li></a>
+                <a href="#"><li> <i class="fa fa-twitter fa-lg"> </i></li></a>
+                <a href="#"><li> <i class="fa fa-instagram fa-lg"></i></li></a>
+                <a href="#"><li> <i class="fa fa-whatsapp fa-lg"> </i></li></a>
+                <a href="#"><li> <i class="fa fa-youtube fa-lg"> </i></li></a>
+            </ul>
+        </nav>
+        <address>
+            Copyright &copy; Games Center 2022. Todos os direitos reservados.
+            Site feito por Eric Righi e Kaiky Machado.
+        </address>
+    </footer>
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/funcoes.js"></script>    
+</body>
+</html>
